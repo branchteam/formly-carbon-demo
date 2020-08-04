@@ -3,16 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormlyModule } from '@ngx-formly/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormlyPrimeNGModule } from '@ngx-formly/primeng';
+import { FormlyCarbonModule } from '@ngx-formly/carbon';
+import { ButtonModule, InputModule } from 'carbon-components-angular';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormlyModule.forRoot(),
+    ReactiveFormsModule,
+    FormlyCarbonModule,
+    InputModule,
+    ButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
