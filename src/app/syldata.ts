@@ -70,6 +70,7 @@ export const BASIC: SylInput = {
         label: 'About you',
         placeholder: 'Thou shall write about thyself ',
         rows: 5,
+        cols: 20,
       },
     },
     // {

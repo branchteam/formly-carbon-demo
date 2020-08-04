@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { SylInput, BASIC, VALIDATIONS, FILEUPLOAD } from './syldata';
 import { FormGroup } from '@angular/forms';
 
@@ -6,6 +6,7 @@ import { FormGroup } from '@angular/forms';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'formly-demo';
