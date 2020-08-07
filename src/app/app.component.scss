@@ -1,44 +1,16 @@
 .container {
-  padding: 2rem 0.5rem 6rem;
+  padding: 1rem 0.5rem 6rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  header {
-    max-width: 820px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: sticky;
-    z-index: 1000;
-    background: #fff;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #555;
-  }
-  .main {
-    max-width: 800px;
-    width: 100%;
-    .ta {
-      display: flex;
-      flex-direction: column;
-    }
-    .rendered {
-      padding: 1rem;
-      border: dashed 1px #69d069;
-    }
 
-    form {
-      button {
-        margin-top: 0.7rem;
-      }
-    }
+  main {
+    max-width: 920px;
+    width: 100%;
   }
+
   footer {
     margin-top: 5rem;
   }
-}
-
-textarea {
-  color: pink;
-  background: green;
 }

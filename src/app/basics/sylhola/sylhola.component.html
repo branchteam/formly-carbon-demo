@@ -1,0 +1,37 @@
+<div class="header">
+  <h2>Forms</h2>
+  <div style="display: flex; flex-wrap: wrap;">
+    <ng-container *ngFor="let sylInput of SYLINPUTS">
+      <button style="margin-top: 1rem; height: 2rem;" ibmButton="secondary" (click)="update(sylInput)">
+        {{ sylInput.name }}
+      </button>
+    </ng-container>
+  </div>
+</div>
+<div class="content">
+  <h2>Input</h2>
+  <h3>Fields</h3>
+  <div class="ta">
+    <textarea ibmTextArea type="text" rows="20" cols="30" #ufields>{{ fields | json }}</textarea>
+    <h3>Model</h3>
+    <div class="ta">
+      <textarea ibmTextArea type="text" rows="10" cols="30" #umodel>{{ model | json }}</textarea>
+    </div>
+    <button
+      style="margin-top: 1rem; height: 2rem;"
+      ibmButton="primary"
+      (click)="updateInputs(ufields.value, umodel.value)"
+    >
+      Update
+    </button>
+    <h2>Rendered Form by Carbon Formly</h2>
+    <form class="rendered" [formGroup]="form" (ngSubmit)="onSubmit(model)">
+      <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+      <button ibmButton="primary" type="submit">Submit</button>
+    </form>
+    <h2>Submitted Data</h2>
+    <div class="ta">
+      <p>{{ model | json }}</p>
+    </div>
+  </div>
+</div>

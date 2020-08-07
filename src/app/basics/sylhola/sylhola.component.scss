@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1000;
+  background: #fff;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #555;
+}
+.content {
+  margin: 0 20px;
+  .ta {
+    display: flex;
+    flex-direction: column;
+  }
+  .rendered {
+    padding: 1rem;
+    border: dashed 1px #69d069;
+  }
+
+  form {
+    button {
+      margin-top: 0.7rem;
+    }
+  }
+}
