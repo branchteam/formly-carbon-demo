@@ -987,6 +987,19 @@
     tree-kill "1.2.2"
     webpack-sources "1.4.3"
 
+"@ngx-formly/carbon@https://github.com/branchteam/ngx-formly/releases/download/5.9.4a-inhouse/ngx_formly_carbon.tar.gz":
+  version "0.0.0-FORMLY-VERSION"
+  resolved "https://github.com/branchteam/ngx-formly/releases/download/5.9.4a-inhouse/ngx_formly_carbon.tar.gz#2920690bcd9dec6365f348f4d33f20890e551dae"
+  dependencies:
+    tslib "^1.9.0"
+
+"@ngx-formly/core@5.9.3":
+  version "5.9.3"
+  resolved "https://registry.yarnpkg.com/@ngx-formly/core/-/core-5.9.3.tgz#69adfa0b114b21c03e2e1642de2d48afd12ac60e"
+  integrity sha512-hHS7TXxc6mXWTaIFCIdi8piIumM0nHtCIxGs9zmzwevvLZ/goLS9Wc6ruuROsoatBLAq9KyNHej43gJ3Yhq3xw==
+  dependencies:
+    tslib "^1.7.1"
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"

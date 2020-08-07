@@ -31,6 +31,8 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@carbon/icons-angular": "^10.8.2",
+    "@ngx-formly/carbon": "https://github.com/branchteam/ngx-formly/releases/download/5.9.4a-inhouse/ngx_formly_carbon.tar.gz",
+    "@ngx-formly/core": "5.9.3",
     "carbon-components": "^10.17.0-rc.0",
     "carbon-components-angular": "~3.46.6",
     "package.json": "^2.0.1",
