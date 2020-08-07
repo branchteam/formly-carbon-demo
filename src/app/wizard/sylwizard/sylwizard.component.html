@@ -1,0 +1,38 @@
+<div class="content">
+  <h3>Formly Carbon Wizard Example</h3>
+  <div class="theform">
+    <h4>Mushroom Raid Form</h4>
+    <ibm-progress-indicator class="indicator" [steps]="stepsForIndicator" [current]="activeStep">
+    </ibm-progress-indicator>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <formly-form
+        [model]="model"
+        [form]="form.at(activeStep)"
+        [options]="options[activeStep]"
+        [fields]="steps[activeStep].fields"
+      ></formly-form>
+      <div class="actions">
+        <button type="button" [disabled]="!(activeStep > 0)" ibmButton="secondary" (click)="prevStep(1)">
+          Previous
+        </button>
+        <button
+          type="button"
+          [disabled]="!(activeStep < steps.length - 1) || !form.at(activeStep).valid"
+          ibmButton="secondary"
+          (click)="nextStep(1)"
+        >
+          Next
+        </button>
+      </div>
+
+      <button type="submit" [disabled]="activeStep != form.length - 1 || form.status != 'VALID'" ibmButton="primary">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <h3>Model</h3>
+  <div>
+    <p>{{ model | json }}</p>
+  </div>
+</div>

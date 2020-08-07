@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RegistrationComponent } from './registration/registration.component';
+import { SylWizard } from './sylwizard/sylwizard.component';
 
 const routes: Routes = [
   {
     path: 'wizard',
-    component: RegistrationComponent,
+    component: SylWizard,
   },
 ];
 
