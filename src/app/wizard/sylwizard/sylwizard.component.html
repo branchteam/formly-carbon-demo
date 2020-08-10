@@ -12,15 +12,15 @@
         [fields]="steps[activeStep].fields"
       ></formly-form>
       <div class="actions">
-        <button type="button" [disabled]="!(activeStep > 0)" ibmButton="secondary" (click)="prevStep(1)">
+        <!-- Put belove inside of Previous button attributes to disable next until current form is VALID -->
+        <!-- [disabled]="!(activeStep > 0)" -->
+        <button type="button" ibmButton="secondary" (click)="prevStep(1)">
           Previous
         </button>
-        <button
-          type="button"
-          [disabled]="!(activeStep < steps.length - 1) || !form.at(activeStep).valid"
-          ibmButton="secondary"
-          (click)="nextStep(1)"
-        >
+
+        <!-- Put belove inside of Next button attributes to disable next until current form is VALID -->
+        <!-- [disabled]="!(activeStep < steps.length - 1) || !form.at(activeStep).valid" -->
+        <button type="button" ibmButton="secondary" (click)="nextStep(1)">
           Next
         </button>
       </div>
